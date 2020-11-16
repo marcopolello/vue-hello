@@ -11,9 +11,7 @@
       <h1> {{message}} </h1>
       <p>{{text}}</p>
       <!-- <button v-on:click="showImg" type="button" name="button">Click me!</button> -->
-      <div v-for="picture in picture">
-        <img src="data:picture" v-img="picture">
-      </div>
+        <img v-bind:src="picture">
     </div>
     <script src="js/script.js" charset="utf-8"></script>
   </body>
