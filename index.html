@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Vue-hello</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <h1> {{message}} </h1>
+      <p>{{text}}</p>
+      <!-- <button v-on:click="showImg" type="button" name="button">Click me!</button> -->
+      <div v-for="picture in picture">
+        <img src="data:picture" v-img="picture">
+      </div>
+    </div>
+    <script src="js/script.js" charset="utf-8"></script>
+  </body>
+</html>
