@@ -2,22 +2,17 @@
 // Bonus: Aggiungere un’immagine presa anch’essa da un data
 // Altro possibile Bonus:
 // gestire una funzione con un evento nel modo Vue.
-
+var variabile = prompt("scrivi qualcosa");
 var app = new Vue({
   el: '#app',
   data: {
     message: "stampa a schermo un messaggio",
-    text: "del testo a caso..",
+    text: variabile,
     picture: "https://cdn.pixabay.com/photo/2020/11/09/18/54/mountains-5727541__340.jpg",
-    myClass: "visible, invisible",
   },
   methods: {
     toggleImg: function() {
-      if (this.picture === 'invisible') {
-        this.picture = 'visible';
-      } else {
-        this.picture.myClass = 'invisible';
-      }
+      document.getElementById('immagine').classList.toggle('invisible');
     }
   }
 });
