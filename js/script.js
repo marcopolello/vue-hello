@@ -8,11 +8,16 @@ var app = new Vue({
   data: {
     message: "stampa a schermo un messaggio",
     text: "del testo a caso..",
-    picture: 'https://cdn.pixabay.com/photo/2020/11/09/18/54/mountains-5727541__340.jpg'
-    // methods: {
-    //   showImg: function() {
-    //
-    //   }
-    // }
+    picture: "https://cdn.pixabay.com/photo/2020/11/09/18/54/mountains-5727541__340.jpg",
+    myClass: "visible, invisible",
+  },
+  methods: {
+    toggleImg: function() {
+      if (this.picture === 'invisible') {
+        this.picture = 'visible';
+      } else {
+        this.picture.myClass = 'invisible';
+      }
+    }
   }
 });

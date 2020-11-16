@@ -10,8 +10,8 @@
     <div id="app">
       <h1> {{message}} </h1>
       <p>{{text}}</p>
-      <!-- <button v-on:click="showImg" type="button" name="button">Click me!</button> -->
-        <img v-bind:src="picture">
+      <button @click="toggleImg" type="button" name="button">Click me!</button>
+        <img class="invisible" v-bind:src="picture">
     </div>
     <script src="js/script.js" charset="utf-8"></script>
   </body>
