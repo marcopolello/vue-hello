@@ -1,7 +1,9 @@
 .invisible{
   display: none;
 }
-
+.visible{
+  display: block;
+}
 img{
   display: flex;
   margin-top: 10px;

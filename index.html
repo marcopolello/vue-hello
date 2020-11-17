@@ -11,7 +11,7 @@
       <h1> {{message}} </h1>
       <p> {{text}} </p>
       <button @click="toggleImg" type="button" name="button">Click me!</button>
-        <img id="immagine" class="invisible" v-bind:src="picture">
+        <img id="immagine" :class="myClass" v-bind:src="picture">
     </div>
     <script src="js/script.js" charset="utf-8"></script>
   </body>
