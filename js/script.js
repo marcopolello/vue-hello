@@ -13,14 +13,18 @@ var app = new Vue({
     myClass: "invisible",
   },
   methods: {
-    toggleImg: function() { this.myClass === "invisible" ? this.myClass = "visible" : this.myClass = "invisible"}
+    // toggleImg: function() { this.myClass === "invisible" ? this.myClass = "visible" : this.myClass = "invisible"}
+
+    // versione con arrow function
+    toggleImg: () => { app.myClass === "invisible" ? app.myClass = "visible" : app.myClass = "invisible"}
+
       //document.getElementById('immagine').classList.toggle('invisible')   versione precedente.
+
      //  if (this.myClass === "invisible"){
      //   this.myClass = "visible";
      // } else {
      //   this.myClass = "invisible";
      // }
-
     //}
   }
 });
