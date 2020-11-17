@@ -12,6 +12,9 @@
       <p> {{text}} </p>
       <button @click="toggleImg" type="button" name="button">Click me!</button>
         <img id="immagine" :class="myClass" v-bind:src="picture">
+        <input v-model="nome" type="text" name="" value="" placeholder="scrivi il tuo nome">
+        <input v-model="cognome" type="text" name="" value="" placeholder="scrivi il tuo cognome">
+        <p>Ciao {{nome}} {{cognome}}</p>
     </div>
     <script src="js/script.js" charset="utf-8"></script>
   </body>

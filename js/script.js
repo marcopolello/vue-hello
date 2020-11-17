@@ -11,6 +11,8 @@ var app = new Vue({
     text: "del testo",
     picture: "https://cdn.pixabay.com/photo/2020/11/09/18/54/mountains-5727541__340.jpg",
     myClass: "invisible",
+    nome: "nome",
+    cognome: "cognome"
   },
   methods: {
     // toggleImg: function() { this.myClass === "invisible" ? this.myClass = "visible" : this.myClass = "invisible"}
